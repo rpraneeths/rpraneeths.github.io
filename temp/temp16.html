@@ -10,7 +10,7 @@
       let username = ""
       let currBalance = 0
       function saveData(){
-        let amount=document.getElementById("amount").value
+        let amount= Number(document.getElementById("amount").value)
         let type=document.getElementById("type").value
         for(let i=0;i<users.length;i++){
           if (users[i].email == useremail){
@@ -20,8 +20,10 @@
             else if(type==2){
               users[i].balance-=amount
             }
-            currBalance = users[i].balance
+            spBalance.innerHTML = users[i].balance
+            break;
           }
+          break;
         }
       }
       function home() {
@@ -35,7 +37,7 @@
                <option value=2>Withdraw</option>
                </select></p>
                <button>Submit</button>
-               <p>Current Balance: ${currBalance}</p>
+               <p>Current Balance:<span id ='spBalance'> ${currBalance}</span></p>
 
             `;
         root.innerHTML = str;
