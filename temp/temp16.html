@@ -16,11 +16,17 @@
           if (users[i].email == useremail){
             if (type=="1"){
               users[i].balance += amount
+              spBalance.innerHTML = users[i].balance
             }
             else if (type=="2"){
-              users[i].balance -= amount
+              if(users[i].balance>amount){
+                users[i].balance -= amount
+              }
+              else{
+                spBalance.innerHTML = "Insufficient Balance"
+              }
             }
-            spBalance.innerHTML = users[i].balance
+            //spBalance.innerHTML = users[i].balance
             break
           }
           
