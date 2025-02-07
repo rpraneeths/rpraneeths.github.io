@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name</title>
+  <link rel="icon" type="image/x-icon" href="assets/images/ball.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Add the transparent background to the body */
+    body {
+      background-color: rgba(0, 0, 0, 0); /* Transparent background for the entire page */
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Add transparency to the container */
+    .container {
+      background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+      padding: 20px;
+    }
+
+    /* Transparent background for the header */
+    .header-row {
+      background-color: rgba(0, 0, 0, 0); /* No background color (transparent) */
+    }
+
+    /* Transparent background for each section */
+    .row {
+      background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white background for sections */
+      padding: 20px;
+    }
+
+    /* Transparent background for specific sections */
+    #home {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    #projects {
+      background-color: rgba(255, 182, 193, 0.5); /* light coral with transparency */
+    }
+
+    #services {
+      background-color: rgba(173, 216, 230, 0.5); /* lightblue with transparency */
+    }
+
+    #contact {
+      background-color: rgba(255, 239, 160, 0.5); /* light golden yellow with transparency */
+    }
+
+    .footer {
+      background-color: rgba(0, 0, 0, 0.3); /* Transparent footer */
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .box {
+      flex: 1;
+      margin: 10px;
+    }
+
+    .box h1, .box h2, .box h3, .box p {
+      color: black;
+    }
+
+    .box a {
+      text-decoration: none;
+      color: blue;
+    }
+
+    /* Ensure the text is readable with transparent background */
+    .box p, .box h3, .box h2 {
+      color: #333; /* dark color for contrast */
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header-row">
+      <div class="box">
+        <h1><i>VANKAYALA SRIHITHA</i></h1>
+      </div>
+      <div class="box">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row" id="home">
+      <div style="display: flex;padding-top: 50px;">
+        <div class="box">
+          <marquee><h3>Full Stack Developer</h3></marquee>
+          <h2>Hello!</h2>
+          <h1> I am Srihitha From GRIET </h1>
+          <p><i>
+            I am a passionate and dedicated full-stack developer with a strong foundation 
+            in both frontend and backend technologies. My expertise lies in creating dynamic,
+            user-friendly interfaces and robust server-side architectures that power seamless 
+            applications.</i>
+          </p>
+          <p>
+            <i> As a dedicated web developer, I've honed a versatile skill set
+            that empowers me to bring creative visions to life in the digital
+            realm. My proficiency spans both front-end and back-end
+            technologies, including HTML, CSS, JavaScript, and a variety of
+            popular frameworks and libraries.
+            </i>
+          </p>
+          <button>Button 1</button>
+          <button>Button 2</button>
+        </div>
+        <div class="box">
+          <img src="girl.jpg" width="400" height="400"/>
+        </div>
+      </div>
+    </div>
+
+    <div id="projects" class="row" style="background-color: lightcoral">
+      <h1>Projects</h1>
+      <div style="display: flex">
+        <div class="box">
+          <a href="https://Srihitha47.github.io/mystore">Project-1</a>
+          <p>
+            <a href="https://Srihitha47.github.io/mystore">View Project</a><br>
+            An online shopping app allows users to browse, search, and purchase products easily. Key features
+            include secure registration, product catalog, advanced search with filters, wishlist, and cart management.
+            Users benefit from multiple payment options, personalized recommendations, real-time order tracking, and
+            customer support. Monetization options include commissions, subscriptions, ads, and affiliate marketing.
+            Popular apps like Amazon and Flipkart showcase seamless UX and wide product variety. The technology stack
+            often includes React Native or Flutter for the frontend, Node.js/Django for the backend, and payment
+            integrations like PayPal or Stripe. AI tools like TensorFlow enhance personalization for a tailored user
+            experience.
+          </p>
+        </div>
+
+        <div class="box">
+          <h3>Project 2</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+            quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
+            aliquid ut eveniet. Et illum odio ut voluptates molestiae?
+            Perspiciatis, ab.
+          </p>
+        </div>
+
+        <div class="box">
+          <h3>Project 3</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+            quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
+            aliquid ut eveniet. Et illum odio ut voluptates molestiae?
+            Perspiciatis, ab.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="services" class="row" style="background-color: lightblue">
+      <h1>Services</h1>
+      <div style="display: flex">
+        <div class="box">
+          <h3>Web App Development</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+            quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
+            aliquid ut eveniet. Et illum odio ut voluptates molestiae?
+            Perspiciatis, ab.
+          </p>
+        </div>
+
+        <div class="box">
+          <h3>Mobile App Development</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+            quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
+            aliquid ut eveniet. Et illum odio ut voluptates molestiae?
+            Perspiciatis, ab.
+          </p>
+        </div>
+
+        <div class="box">
+          <h3>Backend Development</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+            quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
+            aliquid ut eveniet. Et illum odio ut voluptates molestiae?
+            Perspiciatis, ab.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="about" class="row">
+      <h1>About</h1>
+      <h3>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sint
+        optio labore a obcaecati. Ullam distinctio corrupti autem. Veritatis
+        ipsa veniam deserunt asperiores nesciunt at provident itaque
+        cupiditate vel dolor.
+      </h3>
+      <h2>Skills</h2>
+      <h3>Java, Python, Reactjs</h3>
+      <p>Display the logo of all the technologies you know.</p>
+    </div>
+
+    <div id="contact" class="row" style="background-color: lightgoldenrodyellow">
+      <h1>Contact</h1>
+      <div style="display: flex">
+        <div class="box">
+          <h3>Contact Form</h3>
+          <p>
+            <input type="text" placeholder="Enter Name">
+          </p>
+          <p>
+            <input type="email" placeholder="Enter Email">
+          </p>
+          <p>
+            <textarea rows="10" cols="60" placeholder="Enter message"></textarea>
+          </p>
+          <button>Send</button>
+        </div>
+
+        <div class="box">
+          <h3>Your/Company Name</h3>
+          <p>
+            <b>Address: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+            quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
+            aliquid ut eveniet. Et illum odio ut voluptates molestiae?
+            Perspiciatis, ab.
+          </p>
+          <p>
+            <b>Email Address: </b>sample@email.com
+          </p>
+          <p>
+            <b>Phone Number: </b>+91 343 445 6789
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">@copyright 2024. All rights reserved.</div>
+  </div>
+</body>
+
+</html>
