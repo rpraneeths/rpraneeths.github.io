@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let users=[]
+        function showData(){
+            //alert("hello world")
+            let name=document.getElementById("name").value
+            let email=document.getElementById("email").value
+            let password=document.getElementById("password").value
+            let dob=document.getElementById("dob").value
+           let user={
+                name:name,
+                email:email,
+                password:password,
+                dob:dob
+            }//object 
+            users.push(user)
+            console.log(users)
+            let len=users.length
+            let str=""
+            for(let i=0;i<len;i++){
+                str= str+ `<li>${users[i].name}-${users[i].email}-${users[i].password}-${users[i].dob}</li>`
+
+            }
+            
+            data.innerHTML=str
+        //     let str=" "
+        //   users.map(value=>{
+        //     str = str + value + "<br>"
+        //   })
+        //   data.innerHTML=str
+            //data.innerHTML=name + " | " + email + " | " + password + " | " + dob
+            //data.innerHTML=`${name},${email},${password},${dob}`
+            //above is a  back tick method used to capture the data
+        }
+    </script>
+</head>
+<body>
+    <h1>New Registration Page</h1>
+    <p><input type="text" id="name" placeholder="Enter Name" ></p>
+    <p><input type="text" id="email" placeholder="Enter Email Address" ></p>
+    <p><input type="password" id="password" placeholder="Enter Password" ></p>
+    <p><input type="datetime-local" id="dob" placeholder="Enter DOB" ></p>
+    <button onclick="showData()">Submit</button>
+<hr/>
+<div id="data"></div>
+
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <h2>Simple Calculator</h2>
+    
+    <p><input type="number" id="x1" placeholder="Enter first number"></p>
+    <p><input type="number" id="x2" placeholder="Enter second number"></p>
+    <button onclick="calculate()">Submit</button>
+
+    <h3>Results:</h3>
+    <div id="data"></div>
+
+    <script>
+        function calculate() {
+            let x = parseFloat(document.getElementById("x1").value);
+            let y = parseFloat(document.getElementById("x2").value);
+
+            if (isNaN(x) || isNaN(y)) {
+                document.getElementById("data").innerHTML = "Please enter valid numbers!";
+                return;
+            }
+
+            let addition = x + y;
+            let subtraction = x - y;
+            let multiplication = x * y;
+            let division = y !== 0 ? (x / y).toFixed(2) : "Error: Division by zero";
+
+            document.getElementById("data").innerHTML = 
+            `
+                <p>Addition: ${addition}</p>
+                <p>Subtraction: ${subtraction}</p>
+                <p>Multiplication: ${multiplication}</p>
+                <p>Division: ${division}</p>
+            `;
+        }
+    </script>
+</body>
+</html>

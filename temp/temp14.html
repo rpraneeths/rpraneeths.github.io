@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display:flex; 
+            justify-content:center;
+        }
+        .box{
+            margin:20px
+        }
+    </style>
+
+    <script>
+        let products=[
+            {
+                id:1,
+                name:"Product 1",
+                price:45,
+                desc:"this is desc of product",
+                url:"https://picsum.photos/id/1/300/300",
+                button:"add to cart"
+            },
+            {
+                id:2,
+                name:"Product 2",
+                price:50,
+                desc:"this is desc of product",
+                url:"https://picsum.photos/id/2/300/300",
+                button:"add to cart"
+            },
+            {
+                id:3,
+                name:"Product 2",
+                price:50,
+                desc:"this is desc of product",
+                url:"https://picsum.photos/id/3/300/300",
+                button:"add to cart"
+            },
+        ];
+        let len=products.length
+        let str="<div class='container'>"
+        for(let i=0;i<len;i++)
+        {
+            str= str + `<div class='box'><img src='${products[i].url}'/><h3>${products[i].id}</h3><h3>${products[i].name}</h3><h3>${products[i].price}</h3><h3>${products[i].desc}</h3><button>${products[i].button}</div>`
+
+        }
+        str=str+"</div>"
+        document.write(str)
+        //or every thing can be written within body tag
+            
+    </script>
+    </head>
+    <body>
+    <div id="data"></div>
+</body>
+</html>
