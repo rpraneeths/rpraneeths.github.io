@@ -26,49 +26,25 @@
         background-color: silver;
         padding: 10px;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
         height: 100%;
       }
-      .box{
-            background-color: pink;
-            margin: 20px;
-            padding:50px;
-            width:200px;
-            border:5px solid black;
-            border-radius:20px;
-            background: linear-gradient(white,powderblue);
-            /* height:300px; */
-            align-items: center;
-            box-shadow:5px 5px 5px 5px grey;
+      .box {
+        /* background-color: teal; */
+        margin: 20px;
+        padding: 20px;
+        width: 300px;
+        border: 5px solid orange;
+        border-radius: 20px;
+        background: linear-gradient(maroon, silver);
+        box-shadow: 5px 5px 5px 5px grey;
         transition-property: transform;
-        transition-duration: 0.2s;
-            
-         }
-         li{
-            display: inline-block;
-            padding:15px;
-            font-size:larger;
-            /* top:0px; */
-            /* position:sticky; */
-         }
-         .submenu{
-            display: none;
-            position:absolute;
-            background-color: silver;
-         }
-         .box:hover{
-            transform:scale(1.5,1.5);
-         }
-         .menu:hover .submenu{
-            display: block;
-            height: 100%;
-         }
-         .submenu:hover{
-            display: block;
-            height:100%;
-         }
-        
+        transition-duration: 0.5s;
+      }
+      .box:hover {
+        transform: scale(1.5, 1.5);
+      }
 
       .container {
         position: absolute;
@@ -86,88 +62,104 @@
         font-weight: bold;
       }
       .header {
-        background-image:linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),url("women.jpeg");
+        background-image: url("assets/images/officedesk.jpg");
         background-size: cover;
         justify-content: center;
         align-items: end;
       }
-      .service box{
-        background-color: aquamarine;
-        height:100%;
-        right:0px;
-        left:0px;
-        display:none;
-        position:absolute;
+      .caption {
+        background-color: red;
+        padding: 20px;
+        opacity: 0.4;
+        color: white;
       }
-      .caption{
-            background-color:antiquewhite;
-            padding:40px;
-            opacity:0.7;
 
-         }
+      #h a {
+        text-decoration: none;
+      }
+      /* ul {
+        margin: 0px;
+        padding: 0px;
+      } */
+      li {
+        display: inline-block;
+        padding: 5px;
+        font-size: larger;
+      }
+      .menu {
+        margin: 0px;
+      }
+      .submenu {
+        display: none;
+        position: absolute;
+        background-color: silver;
+      }
+      .menu:hover .submenu {
+        display: block;
+      }
+      .menu:hover {
+        background-color: silver;
+      }
+     
     </style>
   </head>
   <body>
     <div class="container">
-    <h1>Temp 6</h1>
-    <!-- <h3 style="background-color: orange">My Application</h3> -->
-    <!-- <h3 class="c">My Application</h3> -->
-    <!-- <h3>My Application</h3> -->
-     
-    <div id="h">
-      <h3>My Application</h3>
-      <div>
+      <h1 id="temp">Temp 6</h1>
+      <!-- <h3 style="background-color: orange">My Application</h3> -->
+      <!-- <h3 class="c">My Application</h3> -->
+      <!-- <h3>My Application</h3> -->
+
+      <div id="h">
+        <h3>My Application</h3>
         <div>
-            <ul>
-          <li><a href="#home">Home</a></li>
-          <li class="menu">
-            <a href="#Projects">Projects</a><br>
-            <div class="submenu">
-                <a href="#">Projet 1</a><br />
+          <!-- <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a> -->
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li class="menu">
+              <a href="#projects">Projects</a>
+              <div class="submenu">
+                <a href="#">Project 1</a><br />
                 <a href="#">Project 2</a><br />
-                </div>
+              </div>
             </li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-            </ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
       </div>
-    </div>
-    <div class="row header" id="home">
-      <div class="caption">
-        <h1>Full Stack Developer</h1>
-        <p>MERN | MERN | Java | Python</p>
+
+      <div class="row header" id="home">
+        <div class="caption">
+          <h1>Full Stack Developer</h1>
+          <p>MERN | MERN | Java | Python</p>
+        </div>
+      </div>
+      <div class="row" id="projects">
+        <div class="box">
+          <h2>Project 1</h2>
+          <p>This is my project 1</p>
+          <a href="#">View Project</a>
+        </div>
+        <div class="box">
+          <h2>Project 2</h2>
+          <p>This is my project 2</p>
+          <a href="#">View Project</a>
+        </div>
+        <div class="box">
+          <h2>Project 3</h2>
+          <p>This is my project 3</p>
+          <a href="#">View Project</a>
+        </div>
+      </div>
+      <div>
+        <h3>@Copyright 2024. All rights reserved.</h3>
       </div>
     </div>
-    <div class="row" id="projects" >
-      <div class="box">
-        <h2>Project 1</h2>
-        <p>This is my project 1</p>
-        <a href="#">View Project</a>
-      </div>
-      <div class="box">
-        <h2>Project 2</h2>
-        <p>This is my project 2</p>
-        <a href="#">View Project</a>
-      </div>
-      <div class="box">
-        <h2>Project 3</h2>
-        <p>This is my project 3</p>
-        <a href="#">View Project</a>
-      </div>
-    </div>
-    <div class="service box">
-        <h3>Services</h3>
-        <ol>
-            <li>Web Development</li>
-            <li>App Development</li>
-            <li>Backend Development</li>
-        </ol>
-    </div>
-    <div>
-      <h3>@Copyright 2024. All rights reserved.</h3>
-    </div>
-  </div>
   </body>
 </html>

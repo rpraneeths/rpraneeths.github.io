@@ -1,241 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name</title>
-  <link rel="icon" type="image/x-icon" href="assets/images/ball.png" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<style>
-  #home {
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(women.jpeg);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    color: white;
-
-    padding: 20px;
-  }
-</style>
-
-<body>
-  <div class="container">
-    <div class="header-row">
-      <div class="box">
-        <h1><i>HEISENBERG</i></h1>
-      </div>
-      <div class="box">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#about">About</a></li>
-
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document </title>
+    <style>
+        a{
+            text-decoration: none;
+            margin: 5px;
+              color:white;
+            padding: 5px;
+        }
+        iframe {
+            margin:10px;
+            width: 1200px;
+            border:none;
+            height: 600px;
+        }
+        .page {
+          background-color: blue;
+          width:5px;
+          border-radius: 100%;
+        }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div id="divTitle"></div>
+      <hr>
+      <div>
+        <iframe name="tempFrm" src="temp1.html"></iframe>
       </div>
     </div>
-
-    <div class="row" id="home">
-      <div style="display: flex;padding-top: 50px;">
-        <div class="box">
-          <marquee>
-            <h3>Full Stack Developer</h3>
-          </marquee>
-          <h2>Hello!</h2>
-          <h1> Praneeth From GRIET </h1>
-
-          <p><i>
-
-              I am a passionate and dedicated full-stack developer with a strong foundation
-              in both frontend and backend technologies. My expertise lies in creating dynamic,
-              user-friendly interfaces and robust server-side architectures that power seamless
-              applications.</i>
-          </p>
-          <p style="color: white">
-            <i> As a dedicated web developer, I've honed a versatile skill set
-              that empowers me to bring creative visions to life in the digital
-              realm. My proficiency spans both front-end and back-end
-              technologies, including HTML, CSS, JavaScript, and a variety of
-              popular frameworks and libraries.
-            </i>
-          </p>
-          <button>LinkdeIn</button>
-          <button>Resume</button>
-        </div>
-        <div class="box">
-          <!-- <img src="girl.jpg" width="400" height="400" /> -->
-        </div>
-      </div>
-    </div>
-    <hr color="white">
-
-    <div id="projects" class="row"
-      style="background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(women.jpeg)"
-      background-position: "center" background-size: "cover" position: relative; color: white;>
-      <h1 style="color:purple">Projects</h1>
-      <div style="display: flex">
-        <div class="box">
-          <center>
-          <h3 style="color: white">Project 1</h3>
-          
-            <a href="https://Srihitha47.github.io/mystore"><h3 style="color: rebeccapurple">view project-1</a></h3><br>
-            <br>
-            <img
-              src="data:image/png;base64,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" /><br>
-          
-          <p style="color: white">
-            An online shopping app with features like secure registration, product catalog, search filters, wishlist,
-            cart management, multiple payment options, personalized recommendations, and real-time order tracking.
-            Tech stack includes React Native, Node.js/Django, and PayPal/Stripe.
-          </p>
-        </center>
-        </div>
-
-        <div class="box">
-          <center>
-          <h3 style="color:white">Project 2</h3>
-          <a href="https://github.com/SrihithaVankayala/weather-website" <h3 style="color:rebeccapurple">View Project:2</a></h3><br>
-          <br>
-          <img src="weather.jpeg"><br>
-          </center>
-          <p style="color: white">
-            To get temperature information for any location, you can use popular weather websites like
-            Simply search for the city or place name to get real-time data, including the current temperature,
-            forecast, and weather conditions.
-          </p>
-           </center>
-        </div>
-
-        <div class="box">
-          <center>
-          <h3 style="color:white">Project 3</h3>
-          <a href="https://github.com/SrihithaVankayala/Form-Validation" <h3 style="color:rebeccapurple">View Project:3</a></h3><br>
-          <br>
-          <img src="form.png" height="200" width="200">
-          <p style="color: white">
-            Form validation ensures user input meets required criteria before submission. It can be done using
-            client-side validation for immediate feedback and server-side validation for security.
-            Common checks include required fields, format verification,and input range.
-          </p>
-        </center>
-        </div>
-      </div>
-    </div>
-    <hr color="white">
-    <div id="services" class="row"
-      style="background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(women.jpeg)"
-      background-position: "center" background-size: "cover" position: relative; color: white>
-      <h1 style="color:purple">Services</h1>
-      <div style="display: flex">
-        <div class="box">
-          <h3 style="color:wheat">Web App Development</h3>
-          <p style="color: white">
-            Web app development involves building applications that run on web browsers, typically split into
-            front-end(UI/UX using HTML, CSS, JavaScript frameworks like React or Vue.js) and back-end
-            (server-side logic, databases, APIs using technologies like Node.js, Python, or Ruby on Rails).Full-stack
-            development combines both. Web apps use databases like MySQL or MongoDB to store data. Deployment occurs
-            on platforms like AWS or Heroku. Security is crucial, with measures such as HTTPS, authentication, and
-            encryption. Version control (Git), testing, and optimization for performance and mobile responsiveness are
-            essential for a successful web app.
-          </p>
-        </div>
-
-        <div class="box">
-          <h3 style="color:wheat">Mobile App Development</h3>
-          <p style="color: white">
-            Mobile app development involves creating applications for smartphones and tablets. It includes native app
-            development, where apps are built for specific platforms (iOS with Swift, Android with Kotlin/Java) for
-            optimal performance, and cross-platform development, using frameworks like React Native, Flutter, or
-            Xamarin to create apps for both iOS and Android with a single codebase. The process includes design, coding,
-            testing, and deployment on app stores (Google Play, Apple App Store). Key considerations include user
-            experience, app performance, security, and compatibility across devices. Development also involves
-            maintaining updates and ensuring scalability as the app grows.
-          </p>
-        </div>
-
-        <div class="box">
-          <h3 style="color: wheat">Backend Development</h3>
-          <p style="color: white">
-            Backend development involves creating the server-side logic, databases, and APIs that power web and mobile
-            applications. It focuses on handling data storage, server communication, user authentication, and
-            application functionality. Technologies commonly used include server-side languages like Node.js,
-            Python(Django, Flask),Ruby(Rails), and Java(Spring), along with databases such as MySQL,
-            PostgreSQL, or MongoDB. Backend developers also work with APIs, ensuring data is processed and
-            delivered between the front-end and the database. Key concerns include performance, security (e.g., data
-            encryption, authentication), and scalability to handle increasing users and data.
-          </p>
-        </div>
-      </div>
-    </div>
-    <hr color="white">
-    <div id="about" class="row" style="background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(women.jpeg)" >
-      <h1 style="color:purple">About</h1>
-      <h3 style="color:white">
-        I am a recent graduate in the field of Artificial Intelligence and Machine Learning (AIML) from Gokaraju
-        Rangaraju Institute of Engineering and Technology. While my academic background has provided me with a strong
-        foundation in AI and ML, I have always been passionate about web development. I enjoy creating
-        user-friendly, responsive websites and applications that solve real-world problems. With a deep interest in
-        technology and continuous learning, I strive to combine my knowledge of AI/ML with web development to build
-        innovative and intelligent web solutions.
-
-      </h3>
-      <hr color="white">
-      <h2 style="color:purple">Skills</h2>
-      <h3 style="color: white">Cloud Computing,Java, Python,html, Node.js ,SQL</h3>
-      <p>Display the logo of all the technologies you know.</p>
-      <img src="cloud.jpeg " width="200" height="200">
-      <img src="java.png" width="200" height="200">
-      <img src="html.jpeg" width="200" height="200">
-      <img src="pyhon.jpeg" width="200" height="200">
-      <img src="sql.png" width="200" height="200">
-    </div>
-    <hr>
-    <div id="contact" class="row" style="background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(women.jpeg)">
-      <h1 style="color:purple">Contact</h1>
-      <div style="display: flex">
-
-
-        <div class="box">
-          <h3 style ="color:wheat">Contact Form</h3>
-          <p>
-            <input type="text" placeholder="Enter Name">
-          </p>
-          <p>
-            <input type="email" placeholder="Enter Email">
-          </p>
-          <p>
-            <textarea rows="10" cols="60" placeholder="Enter message"></textarea>
-          </p>
-          <img src="insta.jpeg" width="100" height="100">
-          <img src="linkdein.png" width="100" height="100">
-          <img src="gmail.png" width="100" height="100">
-          <img src="face.png" width="100" height="100">
-          
-
-          <br>
-          <br>
-          <button>Send</button>
-        </div>
-
-        <div class="box" style="color:aliceblue">
-          <h3>4<i>R praneeth</i></h3>
-          <p>
-            <b>Address: KPHB,Hyderabad.
-          </p>
-          <p>
-            <b>Email Address: </b>rpaneeths@gmail.com
-          </p>
-          <p>
-            <b>Phone Number: </b>+91 343 445 6789
-          </p>
-        </div> 
-      </div>
-    </div>
-    <div class="footer" ><center>@copyright 2024. All rights reserved.</center></div>
-  </div>
-</body>
-
+    <script>
+      str = "<b>Temp File:</b>";
+      for (let i = 1; i <= 30; i++) {
+        str += `<a href="temp${i}.html" target="tempFrm" class="page">${i}</a>`;
+        
+      }
+      divTitle.innerHTML = str
+      console.log(str)
+    </script>
+  </body>
 </html>

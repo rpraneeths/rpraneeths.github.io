@@ -1,74 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        .c1{
-            display:flex;
-            justify-content:center;
-            align-items: center;
-            font-size: 20px;
-            background-color: #eeee;
+      .container {
+        display: flex;
+        padding:100px;
+        justify-content: center;
+        align-items: center;
+        background-color: #eeeeee;
+      }
+      .box {
+        background-color: white;
+        padding: 100px;
+        width:300px;
+        border-radius:50px;
+        text-align:center;
+      }
+      input {
+        padding: 10px;
+        width:100%;
+        border:1px silver solid;
+      }
 
-        }
-        .box2{
-            border:5px solid white;
-            padding:100px;
-            width:200;
-            border-radius:20px;
-        }
-        .box{
-            background-color: white;
-            border:1px solid silver;
-            padding:100px;
-            width:200px;
-            height:200px;
-            text-align: center;
-            border-radius:0px;
-        }
-        .i1{
-            background-color: green;
-            width: 200px;
-            border-radius:10px;
-            text-align: center;
-            font-size: 20px;
-        }
-        .box p{
-            font-size:20px;
-        }
-        .i2{
-            background-color: blue;
-        }
-        .c1 p{
-            margin-left: 40px;
-        }
+      .btn-login {
+        background-color: blue;
+        color: white;
+        font-size: 30px;
+        width: 100%;
+        padding:10px;
+        border-radius: 10px;
+      }
+      .left-box {
+        font-size:30px;
+        padding:50px
+      }
+   
+      .left-box p {
+        margin-left:40px;
+      }
+      
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Temp 7</h1>
-    <div class="c1">
-    <div class="box2">
-        <center>
-       <img src="face.png" width="100" height="100">
-        <p>Facebook helps you connect<br>and share with the people in your life.
+    <div class="container">
+      <div class="left-box">
+        <img src="assets/images/facebook.svg" width="400px" />
+        <p>
+          Facebook helps you connect and share<br> with the people in your life.
         </p>
-    </center>
-
-    </div>
-    <div class="box">
-        <center>
+      </div>
+      <div class="box">
         <form>
-    <p><input type="text" placeholder="Email" required></p><br>
-    <td><input type="password" placeholder="enter password" required></td><br>
-    <p>Forgot Password ?</p>
-    <button class="i1">Log In</button><br>
-    <button class="i2">Submit</button><br>
-    <!-- </center> -->
-</form>
-</center>
+          <p><input type="text" placeholder="Enter Email Address" /></p>
+          <p><input type="password" placeholder="Enter Password" /></p>
+          <p><button class="btn-login">Log in</button></p>
+        </form>
+      </div>
     </div>
-</div>
-</body>
+  </body>
 </html>

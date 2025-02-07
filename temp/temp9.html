@@ -1,34 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script>
-        function showData(){
-            let email=document.getElementById("email").value
-            let password=document.getElementById("password").value
-            //data.innerHTML=`${username},${password}`
-            //to Validate the user
-            if(email=="srihitha47@gmail.com" && password=="1234"){
-                data.innerHTML='Welcome Srihitha'
-            }
-            else
-            {
-                data.innerHTML='Access Denied'
-            }
-
+      function showData() {
+        let email = document.getElementById("email").value;
+        let password = document.getElementById("password").value;
+        //data.innerHTML = `${email}, ${password}`
+        if (email=="john@gmail.com" && password == "1234"){
+            data.innerHTML = 'Welcome John'
         }
+        else {
+            data.innerHTML = 'Access Denied'
+        }
+      }
     </script>
- 
-</head>
-
-<body>
-    <h1>Login Page</h1>
-    <p><input type="email" id="email" placeholder="Enter email"></p>
-    <p><input type="text" id="password" placeholder="Enter password"></p>
-    <button onclick="showData()">Login</button>
-</body>
-<hr/>
-<div id="data"></div>
+  </head>
+  <body>
+    <h1>Login Form</h1>
+    <p><input type="text" id="email" placeholder="Email Address" /></p>
+    <p><input type="password" id="password" placeholder="Email Password" /></p>
+    <button onclick="showData()">Log In</button>
+    <hr>
+    <div id="data"></div>
+  </body>
 </html>

@@ -1,28 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script>
-        let i=0
-        function increment(){
-            i++
-            data.innerHTML=i
-
+      let value = 0;
+      function increment() {
+        value=value+1
+        data.innerHTML = value
+      }
+      function decrement() {
+        if (value>0){
+            value=value-1
         }
-        function decrement(){
-            while(i>0){
-            i--
-            data.innerHTML=i
-            }
-
-        }
+        data.innerHTML = value
+      }
     </script>
-</head>
-<body>
-    <!-- <div id="data"></div> -->
-    <button onclick="decrement()">-</button><span id="data"></span> <button onclick="increment()">+</button>
-</body>
-
+  </head>
+  <body>
+    <button onclick="decrement()">-</button>
+    <span id="data"></span>
+    <button onclick="increment()">+</button>
+  </body>
 </html>
